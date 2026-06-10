@@ -1,0 +1,367 @@
+.page {
+  background: var(--white);
+  color: var(--dark);
+  padding: 5rem 2rem 8rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- Top bar ---------- */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.search {
+  flex: 1;
+  max-width: 360px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--dark);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--accent);
+  border-radius: 0;
+  padding: 0.6rem 0;
+  transition: border-color 0.25s ease;
+}
+
+.search::placeholder {
+  color: var(--muted);
+}
+
+.search:focus {
+  outline: none;
+  border-bottom-color: var(--dark);
+}
+
+.addBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  background: var(--dark);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  padding: 0.85rem 1.4rem;
+  border: 1px solid var(--dark);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.addBtn:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.plus {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* ---------- Table ---------- */
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--accent);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.th {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--accent);
+  background: var(--surface);
+  white-space: nowrap;
+}
+
+.tr {
+  transition: background 0.2s ease;
+}
+
+.tr:hover {
+  background: var(--surface);
+}
+
+.td {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--dark);
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--accent);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child .td {
+  border-bottom: none;
+}
+
+.thumbWrap {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.tdTitle {
+  font-weight: 500;
+  min-width: 220px;
+}
+
+.tdDate {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.category {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ---------- Actions ---------- */
+.actions {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.editBtn,
+.deleteBtn {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--accent);
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.editBtn {
+  color: var(--dark);
+}
+
+.editBtn:hover {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: var(--white);
+}
+
+.deleteBtn {
+  color: var(--muted);
+}
+
+.deleteBtn:hover {
+  border-color: var(--dark);
+  color: var(--dark);
+}
+
+/* ---------- Empty ---------- */
+.empty {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 3rem 1.25rem;
+}
+
+/* ---------- Modal ---------- */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(26, 26, 26, 0.55);
+}
+
+.modal {
+  width: 100%;
+  max-width: 480px;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  background: var(--white);
+  padding: 2.5rem;
+}
+
+.modalTitle {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+}
+
+.input {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--dark);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--accent);
+  border-radius: 0;
+  padding: 0.5rem 0;
+  width: 100%;
+  transition: border-color 0.25s ease;
+}
+
+.input::placeholder {
+  color: var(--muted);
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: var(--dark);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 4rem;
+  line-height: 1.5;
+}
+
+/* ---------- Modal actions ---------- */
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.saveBtn,
+.cancelBtn {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  padding: 0.95rem 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.saveBtn {
+  background: var(--dark);
+  color: var(--white);
+  border: 1px solid var(--dark);
+}
+
+.saveBtn:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.cancelBtn {
+  background: transparent;
+  color: var(--dark);
+  border: 1px solid var(--accent);
+}
+
+.cancelBtn:hover {
+  border-color: var(--dark);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .page {
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  .topBar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .search {
+    max-width: none;
+  }
+
+  .addBtn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 3.5rem 1.25rem 5rem;
+  }
+
+  .backdrop {
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .modal {
+    max-width: none;
+    max-height: 100vh;
+    padding: 2rem 1.5rem;
+  }
+}
