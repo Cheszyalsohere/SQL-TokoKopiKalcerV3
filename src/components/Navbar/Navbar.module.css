@@ -178,6 +178,7 @@
 
 /* Responsive */
 @media (max-width: 880px) {
+  .inner { grid-template-columns: 1fr auto; }
   .desktopNav { display: none; }
   .hamburger { display: flex; }
   .mobileMenu { display: block; }

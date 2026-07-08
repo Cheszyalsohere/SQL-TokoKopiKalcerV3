@@ -80,7 +80,7 @@ export default function LandingPage() {
             SIMPLE AS SQL
           </motion.h1>
           <motion.p variants={heroItem} className={styles.heroSub}>
-            Good coffee, clear taste. Every query has a result, every cup has a story.
+            Speciality. Quality. Low-Profile. — the three letters behind every SQL cup.
           </motion.p>
           <motion.div variants={heroItem}>
             <Link to="/menu" className={styles.ctaBtn}>
@@ -209,7 +209,7 @@ export default function LandingPage() {
           <ul className={styles.infoList}>
             <li className={styles.infoItem}>
               <PinIcon />
-              <span>Jl. Ide Lama No. 21, Jakarta, Indonesia</span>
+              <span>Jl. Jambu No. 520, Kidul Dalem, Kec. Bangil, Pasuruan</span>
             </li>
             <li className={styles.infoItem}>
               <ClockIcon />

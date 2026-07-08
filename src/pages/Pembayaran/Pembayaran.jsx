@@ -6,7 +6,7 @@ import { useData } from '../../context/DataContext.jsx';
 
 const formatRupiah = (value) => `Rp ${value.toLocaleString('id-ID')}`;
 
-const STORE_ADDRESS = 'SQL Coffee — Jl. Ide Lama No. 21, Jakarta';
+const STORE_ADDRESS = 'SQL Coffee — Jl. Jambu No. 520, Kidul Dalem, Kec. Bangil, Pasuruan';
 
 const ICONS = {
   dinein: (

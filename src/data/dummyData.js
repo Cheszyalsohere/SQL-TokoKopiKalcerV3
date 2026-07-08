@@ -1,5 +1,23 @@
 // Dummy data for SQL Coffee
 
+// Local image assets (src/assets)
+import espresso from '../assets/espresso.jpg';
+import americano from '../assets/americano.jpg';
+import latte from '../assets/latte.jpg';
+import coldBrew from '../assets/cold-brew.jpg';
+import matchaLatte from '../assets/matcha-latte.jpg';
+import hazelnutLatte from '../assets/hazelnut-latte.jpg';
+import butterCroissant from '../assets/butter-croissant.jpg';
+import cinnamonRoll from '../assets/cinnamon-roll.jpg';
+import almondCroissant from '../assets/almond-croissant.jpg';
+import chocolateCookie from '../assets/chocolate-cookie.jpg';
+import acehGayo from '../assets/aceh-gayo.jpg';
+import toraja from '../assets/toraja.jpg';
+import baliKintamani from '../assets/bali-kintamani.jpg';
+import houseBlend from '../assets/house-blend.jpg';
+import darkRoast from '../assets/dark-roast.jpg';
+import sourdoughToast from '../assets/sourdough-toast.jpg';
+
 export const products = [
   // ---------- Drinks (Menu) ----------
   {
@@ -9,7 +27,7 @@ export const products = [
     price: 27000,
     category: 'black coffee',
     type: 'drink',
-    image: 'https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&h=600&q=80',
+    image: espresso,
   },
   {
     id: 2,
@@ -18,7 +36,7 @@ export const products = [
     price: 28000,
     category: 'black coffee',
     type: 'drink',
-    image: 'https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=600&h=600&q=80',
+    image: americano,
   },
   {
     id: 3,
@@ -27,7 +45,7 @@ export const products = [
     price: 32000,
     category: 'latte',
     type: 'drink',
-    image: 'https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&w=600&h=600&q=80',
+    image: latte,
   },
   {
     id: 4,
@@ -36,7 +54,7 @@ export const products = [
     price: 36000,
     category: 'cold brew',
     type: 'drink',
-    image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=600&q=80',
+    image: coldBrew,
   },
   {
     id: 5,
@@ -45,7 +63,7 @@ export const products = [
     price: 34000,
     category: 'specialty',
     type: 'drink',
-    image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=600&q=80',
+    image: matchaLatte,
   },
   {
     id: 6,
@@ -54,7 +72,7 @@ export const products = [
     price: 33000,
     category: 'latte',
     type: 'drink',
-    image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&h=600&q=80',
+    image: hazelnutLatte,
   },
 
   // ---------- Beans (Shop) ----------
@@ -65,7 +83,7 @@ export const products = [
     price: 95000,
     category: 'single origin',
     type: 'bean',
-    image: 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=600&h=600&q=80',
+    image: acehGayo,
   },
   {
     id: 8,
@@ -74,7 +92,7 @@ export const products = [
     price: 98000,
     category: 'single origin',
     type: 'bean',
-    image: 'https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=600&h=600&q=80',
+    image: toraja,
   },
   {
     id: 9,
@@ -83,7 +101,7 @@ export const products = [
     price: 92000,
     category: 'single origin',
     type: 'bean',
-    image: 'https://images.unsplash.com/photo-1442550528053-c431ecb55509?auto=format&fit=crop&w=600&h=600&q=80',
+    image: baliKintamani,
   },
   {
     id: 10,
@@ -92,7 +110,7 @@ export const products = [
     price: 85000,
     category: 'blend',
     type: 'bean',
-    image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&h=600&q=80',
+    image: houseBlend,
   },
   {
     id: 11,
@@ -101,7 +119,7 @@ export const products = [
     price: 88000,
     category: 'blend',
     type: 'bean',
-    image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&h=600&q=80',
+    image: darkRoast,
   },
 
   // ---------- Food (Menu) ----------
@@ -112,7 +130,7 @@ export const products = [
     price: 28000,
     category: 'pastry',
     type: 'food',
-    image: 'https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=600&q=80',
+    image: butterCroissant,
   },
   {
     id: 13,
@@ -121,7 +139,7 @@ export const products = [
     price: 32000,
     category: 'pastry',
     type: 'food',
-    image: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&h=600&q=80',
+    image: cinnamonRoll,
   },
   {
     id: 14,
@@ -130,7 +148,7 @@ export const products = [
     price: 34000,
     category: 'pastry',
     type: 'food',
-    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=600&q=80',
+    image: almondCroissant,
   },
   {
     id: 15,
@@ -139,7 +157,7 @@ export const products = [
     price: 30000,
     category: 'savory',
     type: 'food',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=600&q=80',
+    image: sourdoughToast,
   },
   {
     id: 16,
@@ -148,7 +166,7 @@ export const products = [
     price: 22000,
     category: 'snack',
     type: 'food',
-    image: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&h=600&q=80',
+    image: chocolateCookie,
   },
 ];
 

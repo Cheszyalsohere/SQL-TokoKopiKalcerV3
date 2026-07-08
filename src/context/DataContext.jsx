@@ -19,7 +19,7 @@ const STORAGE_KEYS = {
 
 // Bump this whenever the seed data shape changes so old cached data in
 // localStorage is dropped automatically (otherwise stale data hides new items).
-const STORAGE_VERSION = '3';
+const STORAGE_VERSION = '5';
 try {
   if (localStorage.getItem('sql_version') !== STORAGE_VERSION) {
     Object.values(STORAGE_KEYS).forEach((k) => localStorage.removeItem(k));
